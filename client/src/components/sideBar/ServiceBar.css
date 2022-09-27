@@ -1,0 +1,335 @@
+.container {
+  /* Frame 979 */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  gap: 10px;
+
+  position: absolute;
+  width: 650px;
+  height: 186px;
+  left: 635px;
+  top: 894px;
+
+  /* white */
+
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.45);
+  border-radius: 5px 5px 0px 0px;
+}
+
+.hazardous-facilities-group {
+  /* Group 40 */
+
+  position: absolute;
+  width: 234px;
+  height: 42px;
+  left: 15px;
+  top: 15px;
+
+  mix-blend-mode: normal;
+}
+.hazardous-facilities-text {
+  /* 위험시설물 */
+
+  position: absolute;
+  height: 16px;
+  left: 19%;
+  right: 0%;
+  top: calc(50% - 16px / 2);
+
+  font-family: "NanumSquare";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+
+  /* theme/coolgray/coolgray70 */
+
+  color: #4d5358;
+}
+
+.intersection-group {
+  /* Group 38 */
+
+  position: absolute;
+  width: 173px;
+  height: 42px;
+  left: 269px;
+  top: 15px;
+}
+.intersection-text {
+  /* 스마트 교차로 알리미 */
+
+  position: absolute;
+  height: 16px;
+  left: 29.48%;
+  right: 0%;
+  top: calc(50% - 16px / 2);
+
+  font-family: "NanumSquare";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+
+  /* primary */
+
+  color: #027fc2;
+}
+
+.turnRight-group {
+  /* turnRight-group */
+
+  position: absolute;
+  width: 173px;
+  height: 42px;
+  left: 462px;
+  top: 15px;
+
+  mix-blend-mode: normal;
+}
+
+.turnRight-text {
+  /* 우회전 알리미 */
+
+  position: absolute;
+  height: 16px;
+  left: 29.48%;
+  right: 0%;
+  top: calc(50% - 16px / 2);
+
+  font-family: "NanumSquare";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+
+  /* theme/coolgray/coolgray70 */
+
+  color: #4d5358;
+}
+
+.one-old-man-group {
+  /* Group 35 */
+  position: absolute;
+  width: 186px;
+  height: 42px;
+  left: 15px;
+  top: 72px;
+
+  mix-blend-mode: normal;
+}
+
+.one-old-man-text {
+  /* 홀몸어르신 서비스 */
+
+  position: absolute;
+  height: 16px;
+  left: 27.42%;
+  right: 0%;
+  top: calc(50% - 16px / 2);
+
+  font-family: "NanumSquare";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+
+  /* theme/coolgray/coolgray70 */
+
+  color: #4d5358;
+}
+
+.day-care-center-group {
+  /* Group 36 */
+
+  position: absolute;
+  width: 173px;
+  height: 42px;
+  left: 269px;
+  top: 72px;
+
+  mix-blend-mode: normal;
+}
+.day-care-center-text {
+  /* 어린이집 알림서비스 */
+
+  position: absolute;
+  height: 16px;
+  left: 29.48%;
+  right: 0%;
+  top: calc(50% - 16px / 2);
+
+  font-family: "NanumSquare";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+
+  /* theme/coolgray/coolgray70 */
+
+  color: #4d5358;
+}
+
+.special-school-group {
+  /* Group 37 */
+
+  position: absolute;
+  width: 173px;
+  height: 42px;
+  left: 462px;
+  top: 72px;
+
+  mix-blend-mode: normal;
+}
+.special-school-text {
+  /* 특수학교 알림서비스 */
+
+  position: absolute;
+  height: 16px;
+  left: 29.48%;
+  right: 0%;
+  top: calc(50% - 16px / 2);
+
+  font-family: "NanumSquare";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+
+  /* theme/coolgray/coolgray70 */
+
+  color: #4d5358;
+}
+
+.smart-security-light-group {
+  /* Group 894 */
+
+  position: absolute;
+  width: 173px;
+  height: 42px;
+  left: 15px;
+  top: 129px;
+
+  mix-blend-mode: normal;
+}
+.smart-security-light-text {
+  /* 특수학교 알림서비스 */
+
+  position: absolute;
+  height: 16px;
+  left: 29.48%;
+  right: 0%;
+  top: calc(50% - 16px / 2);
+
+  font-family: "NanumSquare";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+
+  /* theme/coolgray/coolgray70 */
+
+  color: #4d5358;
+}
+
+.paly-button {
+  /* play */
+
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px 6px;
+  gap: 10px;
+
+  position: absolute;
+  width: 177px;
+  height: 40px;
+  left: 225px;
+  top: -50px;
+
+  /* white */
+
+  background: #ffffff;
+  /* theme/coolgray/coolgray30 */
+
+  border: 1px solid #c1c7cd;
+  border-radius: 30px;
+}
+
+.play-button-text {
+  /* 도시 서비스 선택 */
+
+  width: 110px;
+  height: 18px;
+
+  font-family: "NanumSquare";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+
+  color: #4d5358;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+}
+
+.hazardous-facilities-icon {
+  /* Oval Copy 9 */
+
+  position: absolute;
+  left: 12px;
+  top: 4px;
+
+  /* white */
+
+  background: #ffffff;
+  /* theme/coolgray/coolgray30 */
+
+  border: 3px solid #c1c7cd;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.intersection-text-icon {
+  /* Oval Copy 7 */
+
+  position: absolute;
+  left: 15px;
+  right: 76.3%;
+  top: 4px;
+  bottom: 2.38%;
+
+  /* border: 3px solid #c1c7cd;
+  border-radius: 20px 20px 20px 20px; */
+}
+
+.turnRight-text-icon {
+  position: absolute;
+
+  left: 15px;
+  right: 81.52%;
+  top: 4px;
+  bottom: 26.19%;
+
+  border: 3px solid #c1c7cd;
+  border-radius: 20px 20px 20px 20px;
+}

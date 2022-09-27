@@ -1,0 +1,11 @@
+.first-chart {
+  /* Pie chart */
+
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  left: 24px;
+  top: 185px;
+
+  /* z-index: 0; */
+}

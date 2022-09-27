@@ -1,0 +1,47 @@
+#map {
+  /* map-kakao */
+
+  /* width: 100%;
+  height: 100vh; */
+  position: absolute;
+  width: 2865.29px;
+  height: 1541.49px;
+  left: -370px;
+  top: -198px;
+}
+
+/* .guro-shadow { */
+/* GURO_SHADOW */
+
+/* position: absolute;
+  width: 1199.64px;
+  height: 724.65px;
+  left: 357.21px;
+  top: 184.17px; */
+
+/* primary */
+
+/* border: 2px solid #027fc2;
+} */
+
+/* .subtrack { */
+/* Subtract */
+
+/* position: absolute;
+  width: 2522.84px;
+  height: 1541.49px;
+  left: -370px;
+  top: -198px;
+
+  background: rgba(255, 255, 255, 0.5);
+} */
+
+.Guil-Elementary-School-intersection {
+  /* 구일초등학교-교차로 */
+
+  position: absolute;
+  width: 24px;
+  height: 42px;
+  left: 1166px;
+  top: 534px;
+}
