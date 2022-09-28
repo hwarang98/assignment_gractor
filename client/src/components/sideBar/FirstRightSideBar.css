@@ -1,0 +1,905 @@
+.first-rectangle {
+  /* first-rectangle */
+
+  position: absolute;
+  width: 335px;
+  height: 500px;
+  left: 1570px;
+  top: 95px;
+
+  /* white */
+
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.45);
+  border-radius: 3px;
+}
+
+.rocation-title {
+  /* 고척중학교 교차로 */
+
+  position: absolute;
+  height: 20px;
+  left: 1590px;
+  right: 194px;
+  top: 105px;
+
+  font-family: "NanumSquare";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+
+  /* theme/coolgray/coolgray80 */
+
+  color: #343a3f;
+}
+
+.rocation-sub-title {
+  /* 서울특별시 구로구 고척동 76-224 */
+
+  position: absolute;
+  height: 15px;
+  left: 1590px;
+  right: 145px;
+  top: 130px;
+
+  font-family: "NanumSquare";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  /* identical to box height */
+
+  /* theme/coolgray/coolgray70 */
+
+  color: #4d5358;
+}
+
+.title-rectangle {
+  /* title-retangle */
+  position: absolute;
+  visibility: hidden;
+  width: 335px;
+  height: 60px;
+  left: 1570px;
+  top: 95px;
+
+  /* primary */
+
+  background: #027fc2;
+  opacity: 0.1;
+  border-radius: 3px 3px 0px 0px;
+}
+
+.rocate-title-bottom-bar {
+  /* 타이틀 아랫줄 */
+
+  position: absolute;
+  width: 335px;
+  height: 0px;
+  left: 1570px;
+  top: 155px;
+
+  /* primary-light */
+
+  border: 1px solid #349fda;
+}
+
+.rocate-title-side-bar {
+  /* 타이틀 사이드바 */
+
+  position: absolute;
+  width: 5px;
+  height: 44px;
+  left: 1580px;
+  top: 103px;
+
+  /* primary */
+
+  background: #027fc2;
+}
+
+.installation-location-box {
+  /* Frame 1010 */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 5px;
+
+  position: absolute;
+  width: 62px;
+  height: 16px;
+  left: 1590px;
+  top: 180px;
+}
+
+.installation-location-rectangle {
+  width: 6px;
+  height: 6px;
+
+  /* primary */
+
+  background: #027fc2;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.installation-location-text {
+  /* 설치위치 */
+
+  width: 51px;
+  height: 16px;
+
+  font-family: "NanumSquare";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+
+  /* theme/coolgray/coolgray70 */
+
+  color: #4d5358;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.latitude-box {
+  /* 위도 박스 */
+
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 4px 12px;
+  gap: 10px;
+
+  position: absolute;
+  width: 48px;
+  height: 22px;
+  left: 1600px;
+  top: 206px;
+  z-index: 1;
+  /* white */
+
+  background: #ffffff;
+  /* theme/coolgray/coolgray30 */
+
+  border: 1px solid #c1c7cd;
+  border-radius: 10.5px;
+}
+
+.latitude-text {
+  /* 위도 */
+
+  width: 24px;
+  height: 14px;
+
+  font-family: "NanumSquare";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+
+  /* theme/coolgray/coolgray70 */
+
+  color: #4d5358;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.latitude-num-box {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 15px;
+  gap: 10px;
+
+  position: absolute;
+  width: 158px;
+  height: 22px;
+  left: 1705px;
+  top: 206px;
+  z-index: 1;
+  /* theme/coolgray/coolgray10 */
+
+  background: #f2f4f8;
+  /* theme/coolgray/coolgray30 */
+
+  border: 1px solid #c1c7cd;
+  border-radius: 10.5px;
+}
+
+.latitude-num-text {
+  /* 37.49999581324621 */
+
+  width: 128px;
+  height: 14px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
+  /* identical to box height, or 100% */
+
+  /* theme/coolgray/coolgray80 */
+
+  color: #343a3f;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.longitude-box {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 4px 12px;
+  gap: 10px;
+
+  position: absolute;
+  width: 48px;
+  height: 22px;
+  left: 1600px;
+  top: 233px;
+  z-index: 1;
+  /* white */
+
+  background: #ffffff;
+  /* theme/coolgray/coolgray30 */
+
+  border: 1px solid #c1c7cd;
+  border-radius: 10.5px;
+}
+
+.longitude-text {
+  /* 경도 */
+
+  width: 24px;
+  height: 14px;
+
+  font-family: "NanumSquare";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+
+  /* theme/coolgray/coolgray70 */
+
+  color: #4d5358;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.longitude-num-box {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 15px;
+  gap: 10px;
+
+  position: absolute;
+  width: 166px;
+  height: 22px;
+  left: 1705px;
+  top: 233px;
+  z-index: 1;
+  /* theme/coolgray/coolgray10 */
+
+  background: #f2f4f8;
+  /* theme/coolgray/coolgray30 */
+
+  border: 1px solid #c1c7cd;
+  border-radius: 10.5px;
+}
+
+.longitude-num-text {
+  /* 126.86281102222206 */
+
+  width: 136px;
+  height: 14px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
+  /* identical to box height, or 100% */
+
+  /* theme/coolgray/coolgray80 */
+
+  color: #343a3f;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.height-box {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 4px 12px;
+  gap: 10px;
+
+  position: absolute;
+  width: 68px;
+  height: 22px;
+  left: 1600px;
+  top: 260px;
+  z-index: 1;
+  /* white */
+
+  background: #ffffff;
+  /* theme/coolgray/coolgray30 */
+
+  border: 1px solid #c1c7cd;
+  border-radius: 10.5px;
+}
+
+.height-text {
+  /* 고도(m) */
+
+  width: 44px;
+  height: 14px;
+
+  font-family: "NanumSquare";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  /* theme/coolgray/coolgray70 */
+
+  color: #4d5358;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.height-num-box {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 15px;
+  gap: 10px;
+
+  position: absolute;
+  width: 57px;
+  height: 22px;
+  left: 1705px;
+  top: 260px;
+  z-index: 1;
+  /* theme/coolgray/coolgray10 */
+
+  background: #f2f4f8;
+  /* theme/coolgray/coolgray30 */
+
+  border: 1px solid #c1c7cd;
+  border-radius: 10.5px;
+}
+
+.height-num-text {
+  /* 2.60 */
+
+  width: 27px;
+  height: 14px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
+  /* identical to box height, or 100% */
+
+  /* theme/coolgray/coolgray80 */
+
+  color: #343a3f;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.rocate-box-bar {
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 26px;
+
+  position: absolute;
+  width: 125px;
+  height: 55px;
+  left: 1600px;
+  top: 217px;
+}
+
+.first-rocate-box-bar {
+  width: 125px;
+  height: 1px;
+
+  /* theme/coolgray/coolgray30 */
+
+  background: #c1c7cd;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.second-rocate-box-bar {
+  width: 125px;
+  height: 1px;
+
+  /* theme/coolgray/coolgray30 */
+
+  background: #c1c7cd;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.third-rocate-box-bar {
+  width: 125px;
+  height: 1px;
+
+  /* theme/coolgray/coolgray30 */
+
+  background: #c1c7cd;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.device-state-text-box {
+  /* 디바이스 상태 그룹 */
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 5px;
+
+  position: absolute;
+  width: 91px;
+  height: 16px;
+  left: 1595px;
+  top: 312px;
+}
+
+.device-state-text-rectangle {
+  /* Ellipse 182 */
+
+  width: 6px;
+  height: 6px;
+
+  /* theme/coolgray/coolgray70 */
+
+  background: #4d5358;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.device-state-text {
+  /* 디바이스 상태 */
+
+  width: 80px;
+  height: 16px;
+
+  font-family: "NanumSquare";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+
+  /* theme/coolgray/coolgray70 */
+
+  color: #4d5358;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+/* .device-state-info-box {
+  position: absolute;
+  width: 280px;
+  height: 109px;
+  left: 1600px;
+  top: 338px;
+} */
+
+.device-state-info-rectangle {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 280px;
+  height: 109px;
+  left: 1600px;
+  top: 338px;
+
+  /* white */
+
+  background: #ffffff;
+  /* theme/coolgray/coolgray20 */
+
+  border: 1px solid #dde1e6;
+  border-radius: 3px;
+}
+
+.device-name-title {
+  /* 단말 명칭 */
+
+  position: absolute;
+  height: 15px;
+  left: 1617px;
+  right: 252px;
+  top: 345px;
+
+  font-family: "NanumSquare";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  /* identical to box height */
+
+  /* theme/coolgray/coolgray60 */
+
+  color: #697077;
+}
+
+.device-name {
+  /* OOO정보통신 */
+
+  position: absolute;
+  height: 15px;
+  left: 1720px;
+  right: 125px;
+  top: 345px;
+
+  font-family: "NanumSquare";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  /* identical to box height */
+
+  /* theme/coolgray/coolgray60 */
+
+  color: #697077;
+}
+
+.device-installation-day-title {
+  /* 설치일 */
+
+  position: absolute;
+  height: 15px;
+  left: 1617px;
+  right: 267px;
+  top: 372px;
+
+  font-family: "NanumSquare";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  /* identical to box height */
+
+  /* theme/coolgray/coolgray60 */
+
+  color: #697077;
+}
+.device-installation-day {
+  /* 2018.11.25 */
+
+  position: absolute;
+  height: 15px;
+  left: 1720px;
+  right: 128px;
+  top: 372px;
+
+  font-family: "NanumSquare";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  /* identical to box height */
+
+  /* theme/coolgray/coolgray60 */
+
+  color: #697077;
+}
+
+.device-operation-state-title {
+  /* 단말 운영상태 */
+
+  position: absolute;
+  height: 15px;
+  left: 1617px;
+  right: 228px;
+  top: 399px;
+
+  font-family: "NanumSquare";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  /* identical to box height */
+
+  /* theme/coolgray/coolgray60 */
+
+  color: #697077;
+}
+.device-operation-state {
+  /* 정상 */
+
+  position: absolute;
+  height: 15px;
+  left: 1720px;
+  right: 176px;
+  top: 399px;
+
+  font-family: "NanumSquare";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  /* identical to box height */
+
+  /* theme/coolgray/coolgray60 */
+
+  color: #697077;
+}
+
+.device-communication-state-title {
+  /* 단말 통신상태 */
+
+  position: absolute;
+  height: 15px;
+  left: 1617px;
+  right: 228px;
+  top: 426px;
+
+  font-family: "NanumSquare";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  /* identical to box height */
+
+  /* theme/coolgray/coolgray60 */
+
+  color: #697077;
+}
+.device-communication-state {
+  /* 정상 */
+
+  position: absolute;
+  height: 15px;
+  left: 1720px;
+  right: 176px;
+  top: 426px;
+
+  font-family: "NanumSquare";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  /* identical to box height */
+
+  /* theme/coolgray/coolgray60 */
+
+  color: #697077;
+}
+
+.first-device-state-box-line {
+  position: absolute;
+  width: 280px;
+  height: 0px;
+  left: 1600px;
+  top: 366px;
+
+  /* theme/coolgray/coolgray20 */
+
+  border: 1px dashed #dde1e6;
+}
+.second-device-state-box-line {
+  position: absolute;
+  width: 280px;
+  height: 0px;
+  left: 1600px;
+  top: 393px;
+
+  /* theme/coolgray/coolgray20 */
+
+  border: 1px dashed #dde1e6;
+}
+.third-device-state-box-line {
+  position: absolute;
+  width: 280px;
+  height: 0px;
+  left: 1600px;
+  top: 420px;
+
+  /* theme/coolgray/coolgray20 */
+
+  border: 1px dashed #dde1e6;
+}
+
+.rocation-box-out-line {
+  position: absolute;
+  width: 335px;
+  height: 0px;
+  left: 1570px;
+  top: 485px;
+
+  opacity: 0.5;
+  /* primary-light */
+
+  border: 1px solid #349fda;
+}
+
+.cation-service-box {
+  position: absolute;
+  width: 335px;
+  height: 110px;
+  left: 1570px;
+  top: 485px;
+}
+
+.recation-service-box-rectangle {
+  position: absolute;
+  width: 335px;
+  height: 110px;
+  left: 1570px;
+  top: 485px;
+
+  /* primary-light */
+
+  background: #349fda;
+  opacity: 0.1;
+  border-radius: 0px 0px 3px 3px;
+}
+
+.recation-service-text-box {
+  position: absolute;
+  width: 295px;
+  height: 78px;
+  left: 1589px;
+  top: 500px;
+}
+
+.recation-service-text-title {
+  /* 교차로 알리미 서비스 */
+
+  position: absolute;
+  height: 18px;
+  left: 0.34%;
+  right: 52.2%;
+  top: calc(50% - 18px / 2 - 30px);
+
+  font-family: "NanumSquare";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+
+  /* primary */
+
+  color: #027fc2;
+}
+
+.recation-service-text-sub-title {
+  /* 어린이 보호 구역과 교차로 지역에 진 */
+
+  position: absolute;
+  left: 0.34%;
+  right: -0.34%;
+  top: 35.9%;
+  bottom: -5.13%;
+
+  font-family: "NanumSquare";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  /* or 138% */
+
+  text-align: justify;
+
+  /* primary */
+
+  color: #027fc2;
+}
+
+.button-box {
+  position: absolute;
+  width: 6.7px;
+  height: 7px;
+  left: 1891.56px;
+  top: 495px;
+}
+
+.recation-service-delete-button {
+  /* icon-color */
+
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  right: -0.3px;
+  top: 0px;
+
+  /* primary */
+
+  color: #027fc2;
+}

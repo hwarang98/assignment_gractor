@@ -294,7 +294,7 @@
 }
 
 .hazardous-facilities-icon {
-  /* Oval Copy 9 */
+  /* 위험시설물 예・경보 알림 서비스 */
 
   position: absolute;
   left: 12px;
@@ -310,7 +310,7 @@
 }
 
 .intersection-text-icon {
-  /* Oval Copy 7 */
+  /* 교차로 알리미 서비스 */
 
   position: absolute;
   left: 15px;
@@ -323,6 +323,7 @@
 }
 
 .turnRight-text-icon {
+  /* 우회전 알리미 서비스 */
   position: absolute;
 
   left: 15px;
@@ -332,4 +333,321 @@
 
   border: 3px solid #c1c7cd;
   border-radius: 20px 20px 20px 20px;
+}
+
+.one-old-man-text-icon {
+  /* 홀몸어르신 안심 서비스*/
+
+  position: absolute;
+  left: 12px;
+  right: 77.96%;
+  top: 2.38%;
+  bottom: 2.38%;
+
+  /* white */
+
+  background: #ffffff;
+  /* theme/coolgray/coolgray30 */
+
+  border: 3px solid #c1c7cd;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.day-care-center-text-icon {
+  /* 어린이집 알림 서비스 */
+
+  position: absolute;
+  left: 12px;
+  right: 76.3%;
+  top: 2.38%;
+  bottom: 2.38%;
+
+  /* white */
+
+  background: #ffffff;
+  /* theme/coolgray/coolgray30 */
+
+  border: 3px solid #c1c7cd;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.special-school-text-icon {
+  /* 특수학교 알림 서비스 */
+
+  position: absolute;
+  left: 16px;
+  right: 76.3%;
+  top: 2.38%;
+  bottom: 2.38%;
+
+  /* white */
+
+  background: #ffffff;
+  /* theme/coolgray/coolgray30 */
+
+  border: 3px solid #c1c7cd;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.smart-security-light-text-icon {
+  /* 스마트 보안등 서비스 */
+
+  position: absolute;
+  left: 12px;
+  right: 76.3%;
+  top: 0%;
+  bottom: 4.76%;
+
+  /* white */
+
+  background: #ffffff;
+  /* theme/coolgray/coolgray30 */
+
+  border: 3px solid #c1c7cd;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.paly-time-box {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 5px;
+
+  position: absolute;
+  width: 243px;
+  height: 55px;
+  left: 425px;
+  top: 150px;
+
+  /* theme/coolgray/coolgray10 */
+
+  background: #f2f4f8;
+  /* theme/coolgray/coolgray30 */
+
+  border: 1px solid #c1c7cd;
+  border-radius: 3px;
+}
+
+.play-time-icon {
+  /* 시계 아이콘 */
+
+  width: 40px;
+  height: 40px;
+  margin: 10px 5px 10px 10px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  /* background: #697077; */
+}
+
+.play-time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 5px;
+
+  width: 122px;
+  height: 32px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.play-time-now {
+  /* 재생시간 */
+  width: 51px;
+  height: 16px;
+
+  font-family: "NanumSquare";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+
+  /* theme/coolgray/coolgray70 */
+
+  color: #4d5358;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.min-box {
+  /* 분 박스 */
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 15px;
+  gap: 10px;
+
+  width: 48px;
+  height: 32px;
+
+  /* white */
+
+  background: #ffffff;
+  /* theme/coolgray/coolgray30 */
+
+  border: 1px solid #c1c7cd;
+  border-radius: 3px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.min-box-text {
+  /* 10 */
+  width: 18px;
+  height: 16px;
+
+  font-family: "NanumSquare";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+
+  /* theme/coolgray/coolgray70 */
+
+  color: #4d5358;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.min-text {
+  /* 분 */
+  width: 13px;
+  height: 16px;
+
+  font-family: "NanumSquare";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+
+  /* theme/coolgray/coolgray70 */
+
+  color: #4d5358;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.save-button {
+  /* Frame 983 */
+
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 10px;
+  gap: 10px;
+
+  width: 46px;
+  height: 32px;
+
+  /* white */
+
+  background: #ffffff;
+  /* theme/coolgray/coolgray40 */
+
+  border: 1px solid #a2a9b0;
+  border-radius: 3px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.save-button-text {
+  /* 저장 */
+
+  width: 26px;
+  height: 16px;
+
+  font-family: "NanumSquare";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+
+  /* theme/coolgray/coolgray40 */
+
+  color: #a2a9b0;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.gap {
+  /* gap */
+
+  width: 5px;
+  height: 28px;
+
+  /* transparent */
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+
+.cancel-button-icon-box {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  left: 665px;
+  top: -10px;
+
+  /* white */
+
+  background: #ffffff;
+  /* theme/coolgray/coolgray50 */
+
+  border: 2px solid #878d96;
+  /* border: 3px solid #c1c7cd; */
+  border-radius: 20px 20px 20px 20px;
+}
+
+.cancel-button-icon {
+  padding: 2px 0px 0px 0px;
+  color: #878d96;
 }

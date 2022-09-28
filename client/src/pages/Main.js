@@ -1,5 +1,12 @@
 import React from "react";
-import { Header, LeftSide, Map, ServiceBar } from "../components";
+import {
+  Header,
+  LeftSide,
+  Map,
+  ServiceBar,
+  FirstRightSideBar,
+  SecondSideBar,
+} from "../components";
 
 function Main() {
   return (
@@ -8,6 +15,8 @@ function Main() {
       <Header />
       <LeftSide />
       <ServiceBar />
+      <FirstRightSideBar />
+      <SecondSideBar />
     </div>
   );
 }
