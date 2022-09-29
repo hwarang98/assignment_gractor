@@ -46,6 +46,12 @@ function LeftSide() {
         <AiOutlineRight className="Guro-gu-icon" />
         <span className="Guro-gu-all">전체</span>
       </div>
+
+      <div className="page-rectangle-box">
+        <div className="page-rectangle-first" />
+        <div className="page-rectangle-second" />
+        <div className="page-rectangle-third" />
+      </div>
     </div>
   );
 }

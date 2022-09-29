@@ -6,6 +6,8 @@ import {
   ServiceBar,
   FirstRightSideBar,
   SecondSideBar,
+  TimeServiceBar,
+  ZoomInBar,
 } from "../components";
 
 function Main() {
@@ -17,6 +19,8 @@ function Main() {
       <ServiceBar />
       <FirstRightSideBar />
       <SecondSideBar />
+      <TimeServiceBar />
+      <ZoomInBar />
     </div>
   );
 }

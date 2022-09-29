@@ -396,3 +396,74 @@
   order: 2;
   flex-grow: 0;
 }
+
+.page-rectangle-box {
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 5px;
+
+  position: absolute;
+  width: 45px;
+  height: 15px;
+  left: 158.46px;
+  top: 1025.54px;
+}
+
+.page-rectangle-first {
+  /* Ellipse 144 */
+
+  width: 15px;
+  height: 15px;
+
+  /* primary */
+
+  background: #027fc2;
+  transform: rotate(-90deg);
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  border-radius: 20px 20px 20px 20px;
+}
+
+.page-rectangle-second {
+  width: 10px;
+  height: 10px;
+
+  /* theme/coolgray/coolgray30 */
+
+  background: #c1c7cd;
+  transform: rotate(-90deg);
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+  border-radius: 20px 20px 20px 20px;
+}
+
+.page-rectangle-third {
+  width: 10px;
+  height: 10px;
+
+  /* theme/coolgray/coolgray30 */
+
+  background: #c1c7cd;
+  transform: rotate(-90deg);
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  border-radius: 20px 20px 20px 20px;
+}

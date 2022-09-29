@@ -1,0 +1,344 @@
+/* time_service */
+.timeServiceBar {
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 15px;
+  gap: 20px;
+
+  position: absolute;
+  width: 524px;
+  height: 56px;
+  right: 365px;
+  top: 95px;
+
+  /* white */
+
+  background: #ffffff;
+  /* map-module */
+
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.35);
+  border-radius: 3px;
+}
+
+/* 현재시각 박스 */
+.now-time-service-box {
+  /* width: 176px; */
+  width: 176px;
+  height: 40px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+/* 현재시각  */
+.now-time-text {
+  position: absolute;
+  height: 16px;
+  left: 12px;
+  top: 12px;
+
+  font-family: "NanumSquare";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+
+  /* theme/coolgray/coolgray60 */
+
+  color: #697077;
+}
+
+/* 15:25:43 */
+.now-time {
+  position: absolute;
+  height: 16px;
+  left: 12px;
+  top: 28px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+
+  /* theme/coolgray/coolgray70 */
+
+  color: #4d5358;
+}
+
+/* 2021.03.26 */
+.now-time-date {
+  position: absolute;
+  height: 16px;
+  left: 105px;
+  top: 35px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  /* theme/coolgray/coolgray70 */
+
+  color: #4d5358;
+}
+
+/* 경계선 */
+.timeServiceBar-first-boundary-line {
+  width: 0px;
+  height: 40px;
+
+  /* theme/coolgray/coolgray30 */
+
+  border: 1px solid #c1c7cd;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.timeServiceBar-second-boundary-line {
+  width: 0px;
+  height: 40px;
+
+  /* theme/coolgray/coolgray30 */
+
+  border: 1px solid #c1c7cd;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 3;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.timeServiceBar-third-boundary-line {
+  width: 0px;
+  height: 40px;
+
+  /* theme/coolgray/coolgray30 */
+
+  border: 1px solid #c1c7cd;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 5;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+/* 날씨 박스 */
+.now-weather-box {
+  width: 97px;
+  height: 40px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+/* 날씨 */
+.now-weather-text {
+  position: absolute;
+  height: 16px;
+  left: 230px;
+
+  top: 12px;
+
+  font-family: "NanumSquare";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+
+  /* theme/coolgray/coolgray60 */
+
+  color: #697077;
+}
+
+/* 21 */
+.now-weather-num {
+  position: absolute;
+  height: 23px;
+  left: 230px;
+  top: 28px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+
+  /* theme/coolgray/coolgray70 */
+
+  color: #4d5358;
+}
+
+/* ℃ */
+.now-weather-degree {
+  position: absolute;
+  width: 15px;
+  height: 18px;
+  left: 255px;
+  top: 35px;
+
+  font-family: "NanumBarunGothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+
+  /* theme/coolgray/coolgray70 */
+
+  color: #4d5358;
+}
+
+/* 날씨 아이콘 박스 */
+.weather-icon-box {
+  height: 24px;
+  width: 32px;
+  left: 65px;
+  top: 8px;
+  border-radius: 0px;
+}
+
+/* 날씨 아이콘 박스 */
+.weather-icon {
+  height: 30px;
+  width: 155px;
+  /* left: 230px; */
+  /* top: 20px; */
+  /* border-radius: 0px; */
+}
+
+/* 미세먼지 */
+.fine-dust-box {
+  width: 64px;
+  height: 40px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 4;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+/* PM2.5 */
+.fine-dust-text {
+  position: absolute;
+  width: 41px;
+  height: 16px;
+  left: 370px;
+  top: 12px;
+
+  font-family: "NanumSquare";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+
+  /* theme/coolgray/coolgray60 */
+
+  color: #697077;
+}
+
+/* 27 */
+.fine-dust-num {
+  position: absolute;
+  width: 28px;
+  height: 23px;
+  left: 370px;
+  top: 28px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+
+  /* theme/coolgray/coolgray70 */
+
+  color: #4d5358;
+}
+
+/* 좋음 */
+.fine-dust-degree {
+  position: absolute;
+  width: 26px;
+  height: 16px;
+  left: 410px;
+  top: 35px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+
+  /* theme/coolgray/coolgray70 */
+
+  color: #4d5358;
+}
+
+/* T box*/
+.t-icon-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 11px;
+  gap: 10px;
+
+  width: 37px;
+  height: 38px;
+
+  background: linear-gradient(
+      315deg,
+      rgba(28, 56, 48, 0.3) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    #3e9ee2;
+  border-radius: 3px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 6;
+  flex-grow: 0;
+}
+
+.t-icon-text {
+  width: 15px;
+  height: 28px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 28px;
+
+  /* theme/cyan/cyan10 */
+
+  color: #e5f6ff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}

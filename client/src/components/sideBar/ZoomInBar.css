@@ -1,0 +1,126 @@
+/* 줌인 위젯 클래스 */
+.zoomInBar {
+  height: 200px;
+  width: 36px;
+  left: 1519px;
+  /* top: 122px; */
+  /* border-radius: [object Object]px; */
+}
+
+/* 줌인 위젯 박스 */
+.zoom-in-rectangle {
+  position: absolute;
+  height: 200px;
+  width: 36px;
+  left: 1519px;
+  top: 186px;
+  /* border-radius: 3px; */
+
+  /* white */
+
+  background: #ffffff;
+  /* map-module */
+
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.35);
+  border-radius: 3px;
+}
+
+/* + 아이콘 */
+.zoom-in-plus-icon {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 1527px;
+  top: 196px;
+  border-radius: 0px;
+
+  /* theme/coolgray/coolgray60 */
+
+  /* background: #697077; */
+}
+
+/* 첫번째 라인 */
+.zoom-in-first-line {
+  position: absolute;
+  height: 1px;
+  width: 36px;
+  left: 1519px;
+  top: 222px;
+  border-radius: 0px;
+
+  /* theme/coolgray/coolgray30 */
+
+  background: #c1c7cd;
+}
+
+/* 회색 게이지바 */
+.zoom-in-long-bar {
+  position: absolute;
+  height: 110px;
+  width: 6px;
+  left: 1534px;
+  top: 231px;
+  border-radius: 3px;
+
+  /* theme/coolgray/coolgray20 */
+
+  background: #dde1e6;
+  border-radius: 3px;
+}
+
+/* 컬러 게이지바 */
+.zoom-in-long-bar-color {
+  position: absolute;
+  height: 57px;
+  width: 6px;
+  left: 1534px;
+  top: 283.5px;
+  border-radius: 3px;
+
+  /* primary-light */
+
+  background: #349fda;
+  border-radius: 3px;
+}
+
+/* 게이지바 동그라미 */
+.zoom-in-long-bar-rectangle-color {
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  left: 1529px;
+  top: 276px;
+  border-radius: 0px;
+
+  /* primary */
+
+  background: #027fc2;
+  border-radius: 20px 20px 20px 20px;
+}
+
+/* 두번째 라인 */
+.zoom-in-second-line {
+  position: absolute;
+  height: 1px;
+  width: 36px;
+  left: 1519px;
+  top: 358px;
+  border-radius: 0px;
+
+  /* theme/coolgray/coolgray30 */
+
+  background: #c1c7cd;
+}
+
+.zoom-in-minus-icon {
+  position: absolute;
+  height: 2px;
+  width: 16px;
+  left: 1529px;
+  top: 372px;
+  border-radius: 0px;
+
+  /* theme/coolgray/coolgray60 */
+
+  background: #697077;
+}
