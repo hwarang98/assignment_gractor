@@ -19,6 +19,7 @@ function Main() {
       <ServiceBar />
       <FirstRightSideBar />
       <SecondSideBar />
+
       <TimeServiceBar />
       <ZoomInBar />
     </div>

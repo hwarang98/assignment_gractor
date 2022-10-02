@@ -3,35 +3,64 @@ import axios from "axios";
 import "./SecondRightSideBar.css";
 
 function SecondRightSideBar() {
-  const [dangerServiceData, setDangerServiceData] = useState([]);
-  const [rocationServiceData, setRocationServiceData] = useState([]);
-  const [turnRightServiceData, setTurnRightServiceData] = useState([]);
+  // console.log(dangerServiceData.device[0]);
+  // 대상시설 api요청 저장
+  const [
+    dangerTargetFacilitiesServiceData,
+    setDangerServiceTargetFacilitiesData,
+  ] = useState([]);
+  const [
+    rocationTargetFacilitiesServiceData,
+    setRocationTargetFacilitiesServiceData,
+  ] = useState([]);
+  const [
+    turnRightTargetFacilitiesServiceData,
+    setTurnRightTargetFacilitiesServiceData,
+  ] = useState([]);
 
-  // 위험 시설물 api 요청
+  // 단말기 api 요청
+  const [dangerDeviceServiceData, setDangerServiceDeviceData] = useState([]);
+  const [rocationDeviceServiceData, setRocationDeviceServiceData] = useState(
+    []
+  );
+  const [turnRightDeviceServiceData, setTurnRightDeviceServiceData] = useState(
+    []
+  );
+  // 위험 시설물 대상시설 api 요청
+
   const dangerService = async () => {
-    const data = await axios.post("http://localhost:8000/api", {
-      dangerNotificationService: "dangerNotificationService",
-    });
-    setDangerServiceData(data.data.apiData);
-    return data;
+    const data = await axios.post(
+      "http://localhost:8000/api/notificationService",
+      {
+        dangerNotificationService: "dangerNotificationService",
+      }
+    );
+    setDangerServiceTargetFacilitiesData(data.data.apiData.targetFacilities);
+    setDangerServiceDeviceData(data.data.apiData.device);
   };
 
-  // 회전 교차로 api 요청
+  // 교차로 api 요청
   const rocationService = async () => {
-    const data = await axios.post("http://localhost:8000/api", {
-      rocationNotificationService: "rocationNotificationService",
-    });
-    setRocationServiceData(data.data.apiData);
-    return data;
+    const data = await axios.post(
+      "http://localhost:8000/api/notificationService",
+      {
+        rocationNotificationService: "rocationNotificationService",
+      }
+    );
+    setRocationTargetFacilitiesServiceData(data.data.apiData.targetFacilities);
+    setRocationDeviceServiceData(data.data.apiData.device);
   };
 
   // 우회전 api 요청
   const turnRightService = async () => {
-    const data = await axios.post("http://localhost:8000/api", {
-      turnRightNotificationService: "turnRightNotificationService",
-    });
-    setTurnRightServiceData(data.data.apiData);
-    return data;
+    let data = await axios.post(
+      "http://localhost:8000/api/notificationService",
+      {
+        turnRightNotificationService: "turnRightNotificationService",
+      }
+    );
+    setTurnRightTargetFacilitiesServiceData(data.data.apiData.targetFacilities);
+    setTurnRightDeviceServiceData(data.data.apiData.device);
   };
 
   useEffect(() => {
@@ -40,6 +69,45 @@ function SecondRightSideBar() {
     turnRightService();
   }, []);
 
+  // 위험시설물 대상시설 api data
+  // const dangerServicetargetFacilitiesInstall =
+  //   dangerServiceData.targetFacilities[0].install;
+  // const dangerServicetargetFacilitiesStateNotification =
+  //   dangerServiceData.targetFacilities.stateNotification;
+  // const dangerServicetargetFacilitiesEvent =
+  //   dangerServiceData.targetFacilities.event;
+
+  // 위험시설물 단말기 api Data
+  // const dangerServicedeviceInstall = dangerServiceData.device.install;
+  // const dangerServicedeviceStateNotification =
+  //   dangerServiceData.device.stateNotification;
+  // const dangerServicedeviceEvent = dangerServiceData.device.event;
+
+  // // 교차로 대상시설 api Data
+  // const rocationFacilitiesInstall =
+  //   rocationServiceData.targetFacilities.install;
+  // const rocationFacilitiesStateNotification =
+  //   rocationServiceData.targetFacilities.stateNotification;
+  // const rocationFacilitiesEvent = rocationServiceData.targetFacilities.event;
+
+  // // 교차로 단말기시설 api Data
+  // const rocationDeviceInstall = rocationServiceData.device.install;
+  // const rocationDeviceStateNotification =
+  //   rocationServiceData.device.stateNotification;
+  // const rocationDeviceEvent = rocationServiceData.device.event;
+
+  // // 우회전 대상시설 api Data
+  // const turnRightFacilitiesInstall =
+  //   turnRightServiceData.targetFacilities.install;
+  // const turnRightFacilitiesStateNotification =
+  //   turnRightServiceData.targetFacilities.stateNotification;
+  // const turnRightFacilitiesEvent = turnRightServiceData.targetFacilities.event;
+
+  // // 우회전 단말기시설 api Data
+  // const turnRightDeviceInstall = turnRightServiceData.device.install;
+  // const turnRightDeviceStateNotification =
+  //   turnRightServiceData.device.stateNotification;
+  // const turnRightDeviceEvent = turnRightServiceData.device.event;
   return (
     <div className="SecondRightSideBar">
       <div className="second-right-rectangle" />
@@ -87,32 +155,33 @@ function SecondRightSideBar() {
             대상시설
           </div>
           <div className="danger-notification-service-target-install-number">
-            {dangerServiceData.install}
+            {/* {test} */}
+            {dangerTargetFacilitiesServiceData.install}
           </div>
           <div className="danger-notification-service-target-number-text">
             개소
           </div>
           <div className="danger-notification-service-target-state-number">
-            {dangerServiceData.stateNotification}
+            {dangerTargetFacilitiesServiceData.stateNotification}
           </div>
           <div className="danger-notification-service-target-event-number">
-            {dangerServiceData.event}
+            {dangerTargetFacilitiesServiceData.event}
           </div>
         </div>
         {/* 단말기 */}
         <div className="danger-notification-service-device-box">
           <div className="danger-notification-service-device-text">단말기</div>
           <div className="danger-notification-service-device-install-number">
-            {dangerServiceData.install}
+            {dangerDeviceServiceData.install}
           </div>
           <div className="danger-notification-service-device-number-text">
             개
           </div>
           <div className="danger-notification-service-device-state-number">
-            {dangerServiceData.stateNotification}
+            {dangerDeviceServiceData.stateNotification}
           </div>
           <div className="danger-notification-service-device-event-number">
-            {dangerServiceData.event}
+            {dangerDeviceServiceData.event}
           </div>
         </div>
       </div>
@@ -130,16 +199,16 @@ function SecondRightSideBar() {
             대상시설
           </div>
           <div className="rocation-notification-service-target-install-number">
-            {rocationServiceData.install}
+            {rocationTargetFacilitiesServiceData.install}
           </div>
           <div className="rocation-notification-service-target-number-text">
             개소
           </div>
           <div className="rocation-notification-service-target-state-number">
-            {rocationServiceData.stateNotification}
+            {rocationTargetFacilitiesServiceData.stateNotification}
           </div>
           <div className="rocation-notification-service-target-event-number">
-            {rocationServiceData.event}
+            {rocationTargetFacilitiesServiceData.event}
           </div>
         </div>
         {/* 단말기 */}
@@ -148,16 +217,16 @@ function SecondRightSideBar() {
             단말기
           </div>
           <div className="rocation-notification-service-device-install-number">
-            {rocationServiceData.install}
+            {rocationDeviceServiceData.install}
           </div>
           <div className="rocation-notification-service-device-number-text">
             개
           </div>
           <div className="rocation-notification-service-device-state-number">
-            {rocationServiceData.stateNotification}
+            {rocationDeviceServiceData.stateNotification}
           </div>
           <div className="rocation-notification-service-device-event-number">
-            {rocationServiceData.event}
+            {rocationDeviceServiceData.event}
           </div>
         </div>
       </div>
@@ -175,16 +244,16 @@ function SecondRightSideBar() {
             대상시설
           </div>
           <div className="turn-right-notification-service-target-install-number">
-            {turnRightServiceData.install}
+            {turnRightTargetFacilitiesServiceData.install}
           </div>
           <div className="turn-right-notification-service-target-number-text">
             개소
           </div>
           <div className="turn-right-notification-service-target-state-number">
-            {turnRightServiceData.stateNotification}
+            {turnRightTargetFacilitiesServiceData.stateNotification}
           </div>
           <div className="turn-right-notification-service-target-event-number">
-            {turnRightServiceData.event}
+            {turnRightTargetFacilitiesServiceData.event}
           </div>
         </div>
         {/* 단말기 */}
@@ -193,16 +262,16 @@ function SecondRightSideBar() {
             단말기
           </div>
           <div className="turn-right-notification-service-device-install-number">
-            {turnRightServiceData.install}
+            {turnRightDeviceServiceData.install}
           </div>
           <div className="turn-right-notification-service-device-number-text">
             개
           </div>
           <div className="turn-right-notification-service-device-state-number">
-            {turnRightServiceData.stateNotification}
+            {turnRightDeviceServiceData.stateNotification}
           </div>
           <div className="turn-right-notification-service-device-event-number">
-            {turnRightServiceData.event}
+            {turnRightDeviceServiceData.event}
           </div>
         </div>
       </div>

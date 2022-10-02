@@ -5,8 +5,9 @@ import { ApiDto } from './dto/apis.dto';
 @Controller('api')
 export class ApisController {
   constructor(private readonly apiService: ApisService) {}
-  @Post()
-  async notification(@Body() data: string[]) {
+  @Post('notificationService')
+  async targetApi(@Body() data: string[]) {
+    console.log('data: ', data);
     return await this.apiService.targetFacilities(data);
   }
 }

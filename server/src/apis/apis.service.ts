@@ -1,15 +1,11 @@
 import { Injectable } from '@nestjs/common';
-import { ApiRequest } from './models/apis.model';
+import { apiData } from './models/apis.model';
 
 @Injectable()
 export class ApisService {
   // 대상시설
   async targetFacilities(data) {
-    const apiData: ApiRequest = {
-      install: 320,
-      stateNotification: 3,
-      event: 5,
-    };
+    console.log('apiData: ', apiData);
     const {
       dangerNotificationService,
       rocationNotificationService,
